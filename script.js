@@ -11,10 +11,11 @@ process.on("uncaughtException", (err) => {
 //#region REQUIRES LIB/FUNÇÕES
 
 const puppeteer = require("puppeteer");
-const fs = require("fs");
+var fs = require('fs');
 const path = require("path");
 const watch = require('node-watch');
-const listaImagensJson = require('./data.json')
+let listaImagensJson = require('./data.json')
+const axios = require('axios')
 //#endregion
 
 //#region VARIAVEIS DE COR
@@ -29,14 +30,15 @@ var corYellowBold = "\x1b[33m";
 
 //#region HELP NA INSERÇÃO DE PARÂMETROS
 
-const numParametros = 4; // Número total de parâmetros
+const numParametros = 5; // Número total de parâmetros
 if (process.argv.length != numParametros) {
-
+console.time("Execution Time")
 console.clear();
 console.log(corRedBold + " PARAMETROS NÃO INFORMADOS OU ERRADOS  -  SIGA O HELP ABAIXO: " + corWhiteBold)
 console.log("=====================================================================================================================================================================================================")
 console.log(` 1° VerBrowser         :  "VISIBLE" ou "HIDDEN"                   * Use "HIDDEN" para esconder o browser`)
-console.log(` 2° PastaDeSaida       :  "C:\\TEMP"                               * Sem barra no final`)
+console.log(` 2° PastaDeSaida       :  "C:\\TEMP"                              * Sem barra no final`)
+console.log(` 3° extraQuery         :  "Conteudo extra para pesquisar"         * Ex: IMDB`)
 console.log("=====================================================================================================================================================================================================\n")
 
 process.exit();
@@ -49,6 +51,7 @@ process.exit();
 var estadoBrowser = true;
 const mostrarBrowser         = process.argv[2]; // VISIBLE OU HIDDEN
 const pastaDeDownload        = process.argv[3]; // "C:/Users/murilo/Desktop"
+const extraQuery             = process.argv[4].trim();
 var downloadPath             = path.resolve(pastaDeDownload);
 
 //#endregion
@@ -118,6 +121,8 @@ var downloadPath             = path.resolve(pastaDeDownload);
 
             const page = await browser.newPage()
             await page.setViewport({ width: 1920, height: 1080});
+            await page.goto('https://images.google.com.br/')
+            await sleep(1000)
             console.log("Browser aberto.")
             
         //#endregion
@@ -135,40 +140,60 @@ var downloadPath             = path.resolve(pastaDeDownload);
             //#endregion        
     
         //#endregion
-
         
 
-        //RENOMEIA O NOME DO ARQUIVO BAIXADO
+        //#region PESQUISA AS IMAGENS
 
-        // page.on('response', async (response) => {
-        //     await watch(downloadPath, function (event, name) {
-        //         var nomeArquivo = path.basename(name);
-        //         if (event === "update" && active === true) {
+            await page.type('textarea[title="Pesquisar"]', listaImagensJson[0].name + " " + extraQuery, {delay:50})
+            await sleep(500)
+            await page.click('button[aria-label="Pesquisa Google"]')
 
-        //             // if(menuRamos[salvaArquivoRamo] === "DENTAL" || menuRamos[salvaArquivoRamo] === "PREVIDENCIA"){
-             
-        //                 if(!nomeArquivo.includes(arquivoEmDownload)){
-        //                     active = false
-        //                     var novoNomeArquivo = `${downloadPath}/${menuRamos[salvaArquivoRamo]}-${nomeArquivo}`
-        //                     fs.rename(`${downloadPath}/${nomeArquivo}`, novoNomeArquivo,
-        //                             function (res) {
-        //                             if (res) {
-        //                             } else {
-        //                                 console.log(
-        //                                 corGreenBold +
-        //                                     "Arquivo baixado com sucesso!\n" +
-        //                                     corWhiteBold
-        //                                 );
-        //                                 }
-        //                             }
-        //                     )
-                        
-        //                 }
-        //     }
-        //     })
-        // })
+            for(let i = 0; i < listaImagensJson.length; i++){
+                if(i != 0){
+                    await page.$eval('textarea[aria-label="Pesquisar"]', el => el.value = '');
+                    await sleep(500)
+                    await page.type('textarea[aria-label="Pesquisar"]', listaImagensJson[i].name + " " + extraQuery, {delay:50})
+                    await sleep(500)
+                    await page.click('button[aria-label="Pesquisar"]')
+                }
+
+                await page.waitForSelector('div[data-attrid="images universal"]', {visible:true})
+
+                const divsImagens = await page.$$('div[data-attrid="images universal"]')
+                let divTitle = await getValorLinhas(page,'.JMWMJ div')
+                if(divTitle === "" || divTitle === null || divTitle === undefined){
+                    divTitle = await getValorLinhas(page,'.JMWMJ')
+                }
+                await sleep(500)
+                await divsImagens[0].click()
+                await sleep(3000)
+                const getImgLinkList = await page.$$eval(`[alt="${divTitle[0]}"]`, el => el.map(x => x.getAttribute("src")));
+                await sleep(1000)
+                const getImgLink = getImgLinkList.filter(item => item.startsWith('https:/') && (item.endsWith('.jpg') || item.endsWith('.png') || item.endsWith('.jpeg') || item.endsWith('.webp')))
+                await sleep(500)
+                if(getImgLink[0] === undefined){
+                    continue
+                }
+                const tipoArquivo = getFileExtension(getImgLink[0])
+                await sleep(100)
+                await download_image(getImgLink[0], downloadPath + "\\" + listaImagensJson[i].name + tipoArquivo)
+                console.log(`Download realizado: ${listaImagensJson[i].name}`)
+                listaImagensJson[i].img = getImgLink[0]
+                await sleep(500)
+
+                if(i+1 === listaImagensJson.length) {salvarNewJson(listaImagensJson)}
+            }
 
 
+            
+        //#endregion
+
+        //#region CHAMADA DE FIM DE SCRIPT
+            await sleep(2000)
+            console.timeEnd("Execution Time")
+            fimDoScript()
+
+        //#endregion
 
     }
 
@@ -186,11 +211,12 @@ var downloadPath             = path.resolve(pastaDeDownload);
                 fs.mkdirSync(downloadPath);
             }
             arquivoMarcaErro = arquivoMarcaErro === "" ? "ERRO-SCRIPT.BAD" : "ERRO-SCRIPT.BAD"
-            console.error(corRedBold + "!!!!!!!!!!!!!!!!!!!!!!   ERRO CAPTURADO   !!!!!!!!!!!!!!!!!!!!!!\n" + corWhiteBold, corYellowBold + xerr + corWhiteBold);
+            console.error(corRedBold + "!!!!!!!!!!!!!!!!!!!!!!   ERRO CAPTURADO   !!!!!!!!!!!!!!!!!!!!!!\n" + corWhiteBold, corYellowBold + xerr.stack + corWhiteBold);
             let nomeFinalizador = path.resolve(downloadPath, arquivoMarcaErro);
             let txt = `ERRO no script ${process.argv[1]}:
             PASTA SAIDA  : ${downloadPath}
             VER BROWSE   : ${mostrarBrowser};
+            EXTRA QUERY   : ${extraQuery};
             <mensagem>${xerr}</mensagem>
             `;
             fs.writeFileSync(nomeFinalizador, txt, "utf8");
@@ -214,6 +240,7 @@ var downloadPath             = path.resolve(pastaDeDownload);
             console.log("Parâmetros: ");
             console.log(corBlueBold + " Mostrar browser     : " + corWhiteBold + process.argv[2]);
             console.log(corBlueBold + " Caminho de saída    : " + corWhiteBold + process.argv[3]);
+            console.log(corBlueBold + " Extra query         : " + corWhiteBold + process.argv[4]);
             console.log(corGreenBold+ "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<INICIO DO SCRIPT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n" + corWhiteBold)
         }
 
@@ -346,6 +373,20 @@ var downloadPath             = path.resolve(pastaDeDownload);
 
     //#endregion
 
+    //#region PEGA A EXTENSÃO DO ARQUIVO
+
+        function getFileExtension(url) {
+            // Extrai a última parte do URL após a última barra
+            const filename = url.substring(url.lastIndexOf('/') + 1);
+            
+            // Extrai a extensão do arquivo após o último ponto
+            const extension = filename.substring(filename.lastIndexOf('.') + 1);
+            
+            return "." + extension;
+        }
+
+    //#endregion
+
     //#region todosDigitos(texto)
 
         function todosDigitos(texto){
@@ -371,6 +412,25 @@ var downloadPath             = path.resolve(pastaDeDownload);
                 data.getFullYear() == ano
             );
         }
+
+    //#endregion
+
+    //#region baixar a imagem
+
+    const download_image = (url, image_path) =>
+        axios({
+          url,
+          responseType: 'stream',
+        }).then(
+          response =>
+            new Promise((resolve, reject) => {
+              response.data
+                .pipe(fs.createWriteStream(image_path))
+                .on('finish', () => resolve())
+                .on('error', e => reject(e));
+            }),
+        );
+      
 
     //#endregion
 
@@ -405,6 +465,25 @@ var downloadPath             = path.resolve(pastaDeDownload);
 
         return mapaData
     }
+
+//#endregion
+
+    //#region salvarNewJson(arr)
+
+        function salvarNewJson(arr){
+            const arrayCias = JSON.stringify(arr, null, 2)
+            const caminhoSalvarCia = path.resolve(downloadPath, "newData.json")
+
+                fs.writeFile(caminhoSalvarCia, arrayCias, "utf-8", (err) => {
+                    if(err){
+                        console.error("Erro ao salvar o json: ", err)
+                        return
+                    }else{
+                        console.log("SALVOU NOVO JSON TOP AO FLOP: ", caminhoSalvarCia)
+                        console.log("\n")
+                    }
+                })
+        }
 
 //#endregion
 
