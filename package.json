@@ -1,0 +1,16 @@
+{
+  "name": "topaoflopbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.5",
+    "node-watch": "^0.7.4",
+    "puppeteer": "^23.1.1"
+  }
+}
