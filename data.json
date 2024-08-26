@@ -1,0 +1,112 @@
+[  
+    {
+        "name":"That Time I Got Reincarnated as a Slime",
+        "img":"https://m.media-amazon.com/images/M/MV5BM2M2NDIzOTItZDA1Yy00M2Q4LTk3ZjctZjZmZjUyZWMxM2YyXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+        "desc":"Satoru Mikami, um homem comum, é morto e reencarna em um mundo de fantasia como um slime poderoso chamado Rimuru Tempest. Ele forma alianças com diferentes raças e constrói uma nação de monstros."
+    },
+    {
+        "name":"Classroom of the Elite",
+        "img":"https://m.media-amazon.com/images/M/MV5BMDM0MmVlOGItNDRjYi00MmE3LWExMjktMDc0YTYxYjAzYTE4XkEyXkFqcGdeQXVyNjc3NTI5MDY@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Ambientado em uma escola de elite onde apenas os melhores estudantes têm privilégios, Kiyotaka Ayanokouji tenta passar despercebido, mas seu intelecto brilhante o coloca em situações que revelam a verdadeira natureza competitiva da academia."
+    },
+    {
+        "name":"Black Clover",
+        "img":"https://m.media-amazon.com/images/M/MV5BNTAzYTlkMWEtOTNjZC00ZDU0LWI5ODUtYTRmYzY0MTAzYWZlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Asta e Yuno são órfãos criados juntos em um mundo onde a magia é tudo. Enquanto Yuno é dotado de poderosas habilidades mágicas, Asta, que nasceu sem magia, compensa com determinação e força física para se tornar o Rei Mago."
+    },
+    {
+        "name":"Mob Psycho 100",
+        "img":"https://m.media-amazon.com/images/M/MV5BYWIwZjhkMzgtOWExYi00ZGIwLTg1ZTktNjQyZWIxYWFmZTc0XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        "desc":"Shigeo 'Mob' Kageyama é um estudante com habilidades psíquicas incríveis, mas ele suprime suas emoções para evitar perder o controle de seus poderes. No entanto, à medida que as tensões aumentam, ele luta para manter a calma e evitar uma catástrofe."
+    },
+    {
+        "name":"Naruto",
+        "img":"https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+        "desc":"Naruto Uzumaki é um ninja órfão que sonha em se tornar o Hokage, o líder de sua vila, e ganhar o reconhecimento de todos. Ele enfrenta desafios poderosos e descobre a verdade sobre seu passado e a força interior que carrega."
+    },
+    {
+        "name":"Shingeki No Kyojin",
+        "img":"https://m.media-amazon.com/images/M/MV5BNDFjYTIxMjctYTQ2ZC00OGQ4LWE3OGYtNDdiMzNiNDZlMDAwXkEyXkFqcGdeQXVyNzI3NjY3NjQ@._V1_FMjpg_UX1000_.jpg",
+        "desc":"A humanidade vive cercada por muralhas para se proteger dos Titãs, criaturas gigantes que devoram humanos. Eren Yeager, após testemunhar a morte de sua mãe, jura exterminar todos os Titãs e descobrir a verdade sobre seu mundo."
+    },
+    {
+        "name":"Death Note",
+        "img":"https://m.media-amazon.com/images/M/MV5BNjRiNmNjMmMtN2U2Yi00ODgxLTk3OTMtMmI1MTI1NjYyZTEzXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        "desc":"Light Yagami, um estudante brilhante, encontra um caderno que permite matar qualquer pessoa cujo nome seja escrito nele. Ele começa a usá-lo para eliminar criminosos, mas logo atrai a atenção de um detetive misterioso chamado L."
+    },
+    {
+        "name":"One Piece",
+        "img":"https://m.media-amazon.com/images/M/MV5BODcwNWE3OTMtMDc3MS00NDFjLWE1OTAtNDU3NjgxODMxY2UyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
+        "desc":"Monkey D. Luffy, um jovem pirata com o poder de se esticar como borracha, sonha em encontrar o tesouro lendário conhecido como One Piece e se tornar o Rei dos Piratas. Ele reúne uma tripulação diversificada e navega pelos mares perigosos."
+    },
+    {
+        "name":"One Punch Man",
+        "img":"https://m.media-amazon.com/images/M/MV5BYjYzODlmMDItNzI4YS00MWViLWExNDEtMjAxMzFkYjNjZjU3XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg",
+        "desc":"Saitama é um herói tão poderoso que pode derrotar qualquer oponente com um único soco. No entanto, ele está entediado e frustrado por não encontrar um adversário à altura, enquanto enfrenta ameaças crescentes ao mundo."
+    },
+    {
+        "name":"Frieren",
+        "img":"https://m.media-amazon.com/images/M/MV5BMjVjZGU5ZTktYTZiNC00N2Q1LThiZjMtMDVmZDljN2I3ZWIwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "desc":"A história segue Frieren, uma elfa maga que, após a derrota do Rei Demônio, reflete sobre sua vida longa e suas relações com seus companheiros de equipe, explorando a ideia de imortalidade e o valor das conexões humanas."
+    },
+    {
+        "name":"Demon's Slayer",
+        "img":"https://m.media-amazon.com/images/M/MV5BYTIxNjk3YjItYmYzMC00ZTdmLTk0NGUtZmNlZTA0NWFkZDMwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Tanjiro Kamado, após ter sua família massacrada por demônios e sua irmã transformada em uma deles, torna-se um caçador de demônios para encontrar uma cura para sua irmã e vingar a morte de sua família."
+    },
+    {
+        "name":"Fire Force",
+        "img":"https://m.media-amazon.com/images/M/MV5BY2IyMDA0NGEtZjIyOS00NjU0LThlOTctODA0OTZmMDU2ZTMxXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Em um mundo onde as pessoas podem espontaneamente combustionar e se transformar em monstros de fogo, a Fire Force, uma equipe especial de bombeiros, combate essas ameaças e investiga a origem desse fenômeno."
+    },
+    {
+        "name":"Fullmetal Alchemist ",
+        "img":"https://m.media-amazon.com/images/M/MV5BZmEzN2YzOTItMDI5MS00MGU4LWI1NWQtOTg5ZThhNGQwYTEzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+        "desc":"Os irmãos Edward e Alphonse Elric tentam usar alquimia para ressuscitar sua mãe, mas o experimento dá errado, resultando em graves consequências. Agora, eles buscam a Pedra Filosofal para restaurar seus corpos."
+    },
+    {
+        "name":"Steins Gate",
+        "img":"https://m.media-amazon.com/images/M/MV5BMjUxMzE4ZDctODNjMS00MzIwLThjNDktODkwYjc5YWU0MDc0XkEyXkFqcGdeQXVyNjc3OTE4Nzk@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Rintarou Okabe, um autoproclamado cientista louco, descobre uma maneira de enviar mensagens ao passado, o que desencadeia uma série de eventos imprevisíveis que podem alterar a realidade e ameaçar a vida de seus amigos."
+    },
+    {
+        "name":"Dragon Ball Z",
+        "img":"https://m.media-amazon.com/images/M/MV5BN2VlNTdlMzQtYzE5OC00YmYwLTgyZTItYjEzMWY0ZDNjMTJhXkEyXkFqcGc@._V1_.jpg",
+        "desc":"Goku, um guerreiro Saiyajin criado na Terra, enfrenta inimigos cada vez mais poderosos para proteger o planeta, ao mesmo tempo em que descobre sua origem alienígena e forma laços com aliados e inimigos ao longo de suas aventuras."
+    },
+    {
+        "name":"JoJo's Bizarre Adventure",
+        "img":"https://m.media-amazon.com/images/M/MV5BZDc3NGQ3ZWQtYjNkOC00MjhiLTg2N2YtNmZlOGNiZTFkOWNhXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_FMjpg_UX1000_.jpg",
+        "desc":"A série acompanha as gerações da família Joestar, cada uma enfrentando forças sobrenaturais e vilões mortais com poderes únicos chamados Stands, em aventuras que cruzam tempos e continentes."
+    },
+    {
+        "name":"My Hero Academia",
+        "img":"https://m.media-amazon.com/images/M/MV5BYjViOWY3YTQtNTliOC00NzkwLTllMGMtMjNiZTU0MmZjZTgzXkEyXkFqcGdeQXVyODgzNTQ1NTU@._V1_.jpg",
+        "desc":"Em um mundo onde a maioria das pessoas nasce com superpoderes chamados 'Quirks', Izuku Midoriya, um jovem sem poderes, sonha em se tornar o maior herói de todos os tempos e herda o poder do maior herói, All Might."
+    },
+    {
+        "name":"Sword Art Online",
+        "img":"https://m.media-amazon.com/images/M/MV5BYjY4MDU2YjMtNzY1MC00ODg1LWIwMzYtMWE5YTA3YTI4ZjMxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Em 2022, milhares de jogadores ficam presos em um MMORPG de realidade virtual mortal, onde morrer no jogo significa morrer na vida real. Kirito, um jogador habilidoso, luta para sobreviver e libertar todos."
+    },
+    {
+        "name":"Darling In The Franxx",
+        "img":"https://m.media-amazon.com/images/M/MV5BZGVlY2ZhM2ItMWIwZC00YjU0LWJjNjAtZGVlNWJkM2JmZjhmXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Em um futuro distópico, jovens pilotos lutam contra monstros em robôs gigantes chamados Franxx. Hiro, um piloto caído em desgraça, encontra redenção ao lado de Zero Two, uma misteriosa e poderosa parceira."
+    },
+    {
+        "name":"Bungou Stray Dogs",
+        "img":"https://m.media-amazon.com/images/M/MV5BODA4NTE3NDMtYjViZS00NDIzLWE0ZTgtZjkwNDE3NWRlNzRkXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+        "desc":"A série segue uma agência de detetives com habilidades sobrenaturais, cujos membros são baseados em escritores literários famosos. Eles enfrentam casos misteriosos e conflitos com outras organizações poderosas."
+    },
+    {
+        "name":"Neon Genesis Evangelion",
+        "img":"https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+        "desc":"Em um mundo devastado, adolescentes pilotam robôs gigantes chamados Evangelions para proteger a Terra de misteriosas entidades chamadas Anjos. A série explora temas complexos de identidade, sofrimento e existência."
+    },
+    {
+        "name":"Haikyuu!!",
+        "img":"https://m.media-amazon.com/images/M/MV5BNjkyNDI2MTgtN2Y3NS00M2RjLWJhNDMtMmNmZmUwMDQwZTE1XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        "desc":"apaixonado por vôlei, junta-se ao time de sua escola, Karasuno, e junto com seus companheiros de equipe, trabalha para superar desafios e se tornar o melhor time do Japão. A série celebra o espírito de equipe e superação."
+    }
+]
