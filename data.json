@@ -1,112 +1,112 @@
 [  
     {
-        "name":"Naruto",
+        "name":"Interestelar",
         "img":"",
-        "desc":"Naruto Uzumaki é um ninja órfão que sonha em se tornar o Hokage, o líder de sua vila, e ganhar o reconhecimento de todos. Ele enfrenta desafios poderosos e descobre a verdade sobre seu passado e a força interior que carrega."
+        "desc":"Um grupo de astronautas viaja por um buraco de minhoca em busca de um novo lar para a humanidade enquanto enfrentam os mistérios do tempo e espaço."
     },
     {
-        "name":"That Time I Got Reincarnated as a Slime",
+        "name":"Memento (amnesia)",
         "img":"",
-        "desc":"Satoru Mikami, um homem comum, é morto e reencarna em um mundo de fantasia como um slime poderoso chamado Rimuru Tempest. Ele forma alianças com diferentes raças e constrói uma nação de monstros."
+        "desc":"Um homem com perda de memória recente usa fotos e tatuagens para tentar encontrar o assassino de sua esposa, navegando por uma narrativa não linear."
     },
     {
-        "name":"Classroom of the Elite",
+        "name":"American psycho",
         "img":"",
-        "desc":"Ambientado em uma escola de elite onde apenas os melhores estudantes têm privilégios, Kiyotaka Ayanokouji tenta passar despercebido, mas seu intelecto brilhante o coloca em situações que revelam a verdadeira natureza competitiva da academia."
+        "desc":"Patrick Bateman, um banqueiro de Nova York, vive uma vida dupla como serial killer, explorando temas de consumismo e psicopatia."
     },
     {
-        "name":"Black Clover",
+        "name":"Batman the dark knight",
         "img":"",
-        "desc":"Asta e Yuno são órfãos criados juntos em um mundo onde a magia é tudo. Enquanto Yuno é dotado de poderosas habilidades mágicas, Asta, que nasceu sem magia, compensa com determinação e força física para se tornar o Rei Mago."
+        "desc":"Batman enfrenta o caos personificado pelo Coringa, desafiando seus limites morais e sua luta pela justiça em Gotham."
     },
     {
-        "name":"Mob Psycho 100",
+        "name":"Inception",
         "img":"",
-        "desc":"Shigeo 'Mob' Kageyama é um estudante com habilidades psíquicas incríveis, mas ele suprime suas emoções para evitar perder o controle de seus poderes. No entanto, à medida que as tensões aumentam, ele luta para manter a calma e evitar uma catástrofe."
+        "desc":"Um especialista em roubo de segredos subconscientes lidera uma equipe para implantar uma ideia nos sonhos de um empresário."
     },
     {
-        "name":"Shingeki No Kyojin",
+        "name":"Cisne negro",
         "img":"",
-        "desc":"A humanidade vive cercada por muralhas para se proteger dos Titãs, criaturas gigantes que devoram humanos. Eren Yeager, após testemunhar a morte de sua mãe, jura exterminar todos os Titãs e descobrir a verdade sobre seu mundo."
+        "desc":"Uma bailarina obcecada pela perfeição mergulha em uma espiral psicológica enquanto se prepara para o papel principal em 'O Lago dos Cisnes'."
     },
     {
-        "name":"Death Note",
+        "name":"Que horas ela volta",
         "img":"",
-        "desc":"Light Yagami, um estudante brilhante, encontra um caderno que permite matar qualquer pessoa cujo nome seja escrito nele. Ele começa a usá-lo para eliminar criminosos, mas logo atrai a atenção de um detetive misterioso chamado L."
+        "desc":"A relação entre uma empregada doméstica e sua patroa muda quando sua filha vem morar com elas, expondo questões de classe no Brasil."
     },
     {
-        "name":"One Piece",
+        "name":"Pixote a lei do mais fraco",
         "img":"",
-        "desc":"Monkey D. Luffy, um jovem pirata com o poder de se esticar como borracha, sonha em encontrar o tesouro lendário conhecido como One Piece e se tornar o Rei dos Piratas. Ele reúne uma tripulação diversificada e navega pelos mares perigosos."
+        "desc":"A trágica história de um menino de rua que tenta sobreviver no submundo da criminalidade no Brasil, refletindo a brutalidade social."
     },
     {
-        "name":"One Punch Man",
+        "name":"O corcunda de notre dame (animação)",
         "img":"",
-        "desc":"Saitama é um herói tão poderoso que pode derrotar qualquer oponente com um único soco. No entanto, ele está entediado e frustrado por não encontrar um adversário à altura, enquanto enfrenta ameaças crescentes ao mundo."
+        "desc":"Quasímodo, um corcunda que vive isolado na catedral de Notre Dame, luta pela aceitação e protege a cigana Esmeralda."
     },
     {
-        "name":"Frieren",
+        "name":"Deadpool 3",
         "img":"",
-        "desc":"A história segue Frieren, uma elfa maga que, após a derrota do Rei Demônio, reflete sobre sua vida longa e suas relações com seus companheiros de equipe, explorando a ideia de imortalidade e o valor das conexões humanas."
+        "desc":"O anti-herói irreverente Deadpool retorna para novas aventuras repletas de humor ácido, violência e quebras da quarta parede."
     },
     {
-        "name":"Demon's Slayer",
+        "name":"Shrek 2",
         "img":"",
-        "desc":"Tanjiro Kamado, após ter sua família massacrada por demônios e sua irmã transformada em uma deles, torna-se um caçador de demônios para encontrar uma cura para sua irmã e vingar a morte de sua família."
+        "desc":"Shrek e Fiona visitam o reino de 'Tão Tão Distante', enfrentando desafios familiares e um príncipe encantado em busca do 'felizes para sempre'."
     },
     {
-        "name":"Fire Force",
+        "name":"Coraline",
         "img":"",
-        "desc":"Em um mundo onde as pessoas podem espontaneamente combustionar e se transformar em monstros de fogo, a Fire Force, uma equipe especial de bombeiros, combate essas ameaças e investiga a origem desse fenômeno."
+        "desc":"Uma garota descobre um universo paralelo onde sua 'outra mãe' oferece uma vida ideal, mas com consequências sinistras."
     },
     {
-        "name":"Fullmetal Alchemist ",
+        "name":"Monstros SA",
         "img":"",
-        "desc":"Os irmãos Edward e Alphonse Elric tentam usar alquimia para ressuscitar sua mãe, mas o experimento dá errado, resultando em graves consequências. Agora, eles buscam a Pedra Filosofal para restaurar seus corpos."
+        "desc":"Em um mundo onde monstros geram energia assustando crianças, dois monstros precisam devolver uma menina humana que acidentalmente entrou no seu universo."
     },
     {
-        "name":"Steins Gate",
+        "name":"Pokémon 4Ever",
         "img":"",
-        "desc":"Rintarou Okabe, um autoproclamado cientista louco, descobre uma maneira de enviar mensagens ao passado, o que desencadeia uma série de eventos imprevisíveis que podem alterar a realidade e ameaçar a vida de seus amigos."
+        "desc":"Ash e seus amigos viajam no tempo para proteger o mítico Pokémon Celebi de caçadores, enquanto exploram temas de amizade e preservação."
     },
     {
-        "name":"Dragon Ball Z",
+        "name":"Titanic",
         "img":"",
-        "desc":"Goku, um guerreiro Saiyajin criado na Terra, enfrenta inimigos cada vez mais poderosos para proteger o planeta, ao mesmo tempo em que descobre sua origem alienígena e forma laços com aliados e inimigos ao longo de suas aventuras."
+        "desc":"Um romance entre Jack e Rose floresce a bordo do infame Titanic, cuja viagem culmina em uma tragédia histórica."
     },
     {
-        "name":"JoJo's Bizarre Adventure",
+        "name":"O lobo de wall street",
         "img":"",
-        "desc":"A série acompanha as gerações da família Joestar, cada uma enfrentando forças sobrenaturais e vilões mortais com poderes únicos chamados Stands, em aventuras que cruzam tempos e continentes."
+        "desc":"A ascensão e queda do corretor de ações Jordan Belfort, imersa em excessos, fraudes e a busca incessante por poder e riqueza."
     },
     {
-        "name":"My Hero Academia",
+        "name":"Parasita",
         "img":"",
-        "desc":"Em um mundo onde a maioria das pessoas nasce com superpoderes chamados 'Quirks', Izuku Midoriya, um jovem sem poderes, sonha em se tornar o maior herói de todos os tempos e herda o poder do maior herói, All Might."
+        "desc":"Uma família pobre se infiltra na vida de uma família rica, levando a uma trama de mentiras, exploração e consequências violentas."
     },
     {
-        "name":"Sword Art Online",
+        "name":"Corra!",
         "img":"",
-        "desc":"Em 2022, milhares de jogadores ficam presos em um MMORPG de realidade virtual mortal, onde morrer no jogo significa morrer na vida real. Kirito, um jogador habilidoso, luta para sobreviver e libertar todos."
+        "desc":"Um jovem negro visita a família de sua namorada branca e descobre um segredo perturbador por trás de suas intenções aparentemente amigáveis."
     },
     {
-        "name":"Darling In The Franxx",
+        "name":"Truque de Mestre",
         "img":"",
-        "desc":"Em um futuro distópico, jovens pilotos lutam contra monstros em robôs gigantes chamados Franxx. Hiro, um piloto caído em desgraça, encontra redenção ao lado de Zero Two, uma misteriosa e poderosa parceira."
+        "desc":"Um grupo de ilusionistas realiza roubos ousados durante seus shows, enquanto o FBI tenta capturá-los sem desvendar seus segredos."
     },
     {
-        "name":"Bungou Stray Dogs",
+        "name":"Como se fosse a primeira vez",
         "img":"",
-        "desc":"A série segue uma agência de detetives com habilidades sobrenaturais, cujos membros são baseados em escritores literários famosos. Eles enfrentam casos misteriosos e conflitos com outras organizações poderosas."
+        "desc":"Henry se apaixona por Lucy, que sofre de amnésia e perde a memória todos os dias, forçando-o a reconquistá-la diariamente."
     },
     {
-        "name":"Neon Genesis Evangelion",
+        "name":"Cidade de Deus",
         "img":"",
-        "desc":"Em um mundo devastado, adolescentes pilotam robôs gigantes chamados Evangelions para proteger a Terra de misteriosas entidades chamadas Anjos. A série explora temas complexos de identidade, sofrimento e existência."
+        "desc":"A história brutal do crescimento do crime e violência em uma favela carioca, narrada por um jovem aspirante a fotógrafo."
     },
     {
-        "name":"Haikyuu!!",
+        "name":"Vingadores: Ultimato",
         "img":"",
-        "desc":"apaixonado por vôlei, junta-se ao time de sua escola, Karasuno, e junto com seus companheiros de equipe, trabalha para superar desafios e se tornar o melhor time do Japão. A série celebra o espírito de equipe e superação."
+        "desc":"Os Vingadores se unem uma última vez para reverter o estalo de Thanos, que eliminou metade da vida no universo, em uma batalha épica."
     }
 ]
